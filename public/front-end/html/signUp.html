@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/signUp.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="logo-container">
+        <img src="../img/logo.png" alt="OBI Logo" class="obi-logo">
+    </div>
+    <div class="container">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="../img/about-1.jpg" alt="Slide 1">
+                </div>
+                <div class="slide">
+                    <img src="../img/about-3.jpg" alt="Slide 2">
+                </div>
+                <div class="slide">
+                    <img src="../img/about-4.jpg" alt="Slide 3">
+                </div>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+
+        <div class="signUp-container">
+            <form id="signUpForm" class="signUp-form" enctype="multipart/form-data">
+                
+                <div class="header">
+                    
+                        <img src="../img/logo.png" alt="OBI Logo" class="obi-logo">
+                   
+                    <h3>Sign Up</h3>
+                </div>
+    
+                <div class="form-group">
+                    <label for="username">Email:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="confirm">Confirm Password:</label>
+                    <input type="password" id="confirm" name="confirm" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="maritalStatus">Marital Status:</label>
+                    <select id="maritalStatus" name="maritalStatus" required>
+                        <option value="">Select</option>
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="divorced">Divorced</option>
+                        <option value="widowed">Widowed</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="18" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="cv">Upload CV (Optional):</label>
+                    <input type="file" id="cv" name="cv" accept=".pdf,application/pdf">
+                </div>
+    
+                <div class="form-group">
+                    <label for="profilePicture">Upload Profile Picture (Optional):</label>
+                    <input type="file" id="profilePicture" name="profilePicture" accept="image/*">
+                </div>
+    
+                <div class="form-group">
+                    <label for="maxQualification">Maximum Qualification:</label>
+                    <select id="maxQualification" name="maxQualification" required>
+                        <option value="">Select</option>
+                        <option value="JCE">JCE Certificate</option>
+                        <option value="MSCE">MSCE Certificate</option>
+                        <option value="college">College Certificate</option>
+                        <option value="diploma">Diploma</option>
+                        <option value="advancedDiploma">Advanced Diploma</option>
+                        <option value="degree">Degree</option>
+                        <option value="masters">Masters</option>
+                        <option value="phd">PhD</option>
+                    </select>
+                </div>
+    
+                <input id="submitRegBtn" type="submit" value="Create Account" class="submit-button">
+    
+                <p>Already have an account? <a href="/login">Sign In</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery -->
+    <script src="../scripts/signUpScript.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

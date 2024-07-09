@@ -1,0 +1,99 @@
+:root {
+    --primary: #00B074;
+    --secondary: #2B9BFF;
+    --light: #EFFDF5;
+    --dark: #2B3940;
+    --yellow: #ffa76e;
+    --pink: #5846f9;
+}
+
+body {
+    background-color: var(--light);
+    font-family: Arial, sans-serif;
+}
+
+/*** Navbar ***/
+.nav-wrapper {
+    background-color: var(--primary);
+}
+
+.nav-wrapper .brand-logo {
+    margin-left: 20px;
+}
+
+.nav-wrapper ul li a {
+    color: white;
+    font-size: 16px;
+}
+
+.nav-wrapper ul li a:hover,
+.nav-wrapper ul li a.active {
+    color: var(--yellow);
+}
+
+.nav-wrapper .btn {
+    background-color: var(--secondary);
+}
+
+.nav-wrapper .btn:hover {
+    background-color: var(--yellow);
+    color: var(--light);
+}
+
+/* Mobile Nav */
+.sidenav {
+    background-color: var(--primary);
+}
+
+.sidenav li a {
+    color: white;
+    font-size: 16px;
+}
+
+.sidenav li a:hover,
+.sidenav li a.active {
+    color: var(--yellow);
+}
+
+.container {
+    margin-top: 50px;
+}
+
+table {
+    margin-top: 20px;
+}
+
+th {
+    background-color: var(--primary); /* Header background color */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+td {
+    padding: 8px;
+}
+
+.btn {
+    margin: 0 5px;
+}
+
+/* Tab styling */
+.tabs .tab a {
+    color: var(--dark); /* Tab text color */
+}
+
+.tabs .tab a.active {
+    color: var(--dark); /* Active tab text color */
+}
+
+.tabs .indicator {
+    background-color: var(--secondary); /* Active tab indicator color */
+    height: 5px; /* Adjust the height of the indicator */
+}

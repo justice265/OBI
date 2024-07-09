@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OBI Job Application Form</title>
+    <link rel="stylesheet" href="../css/applicationform.css">
+</head>
+<body>
+    <h1>OBI Job Application Form</h1>
+    <form>
+        <div id="personal-information">
+            <h2>Personal Information</h2>
+            <table>
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" required></td>
+                    <td>Middle Name</td>
+                    <td><input type="text"></td>
+                    <td>Last Name</td>
+                    <td><input type="text" required></td>
+                </tr>
+                <tr>
+            <td>Phone Numbers</td>
+        </tr>
+        <tr>
+            <td>Home Phone</td>
+            <td><input type="text" size="25"></td>
+            <td>Mobile Number 1</td>
+            <td>
+                <input type="text">
+            </td>
+ <td>mobile number 2</td>
+            <td><input type="text" size="25"></td>
+        </tr>
+        <tr>
+            <td>Date Of Birth</td>
+            <td>
+                <input type="date">
+            </td>
+<tr>
+            <td colspan="2">Select Gender</td>
+            <td>
+                <input type="radio" name="Gender" value="male">Male
+            </td>
+            <td>
+                <input type="radio" name="Gender" value="female">Female
+            </td>
+        </tr>
+ <td colspan="2">Languages Known</td>
+
+            <td>
+                <input type="checkbox" value="oriya">Oriya
+            </td>
+            <td>
+                <input type="checkbox" value="hindi">Hindi
+            </td>
+            <td>
+                <input type="checkbox" value="english">English
+            </td>
+ <tr>
+            <td>Nationality</td>
+            <td>
+                <select>
+                    <option>Indian</option>
+                    <option>American</option>
+                    <option>Others</option>
+                </select>
+            </td>
+        </tr>
+            </table>
+        </div>
+
+        
+    <!--Education Details-->
+    <div id="education-details">
+        <h2>Education Details</h2>
+        <table width="100%">
+            <tr>
+                <td>Sno</td>
+                <td>Qualification</td>
+                <td>Institute/University</td>
+                <td>year Of Passing</td>
+                <td>Marks(%)</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    <input type="text" size="25">
+                </td>
+                <td>
+                    <input type="text" size="25">
+                </td>
+                <td>
+                    <input type="month">
+                </td>
+                <td>
+                    <input type="number" min="0" max="100">
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    <input type="text" size="25">
+                </td>
+                <td>
+                    <input type="text" size="25">
+                </td>
+                <td>
+                    <input type="month">
+                </td>
+                <td>
+                    <input type="number" min="0" max="100">
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>
+                    <input type="text" size="25">
+                </td>
+                <td>
+                    <input type="text" size="25">
+                </td>
+                <td>
+                    <input type="month">
+                </td>
+                <td>
+                    <input type="number" min="0" max="100">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!---Work Experience 1-->
+    <div id="work-exp-1">
+        <h2>Work Experience 1</h2>
+        <table width="100%">
+            <tr>
+                <td>Sno</td>
+                <td>Company Address</td>
+                <td>Work/Roles</td>
+                <td colspan="2">Duration(from-to)</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    <textarea rows="5" cols="30"></textarea>
+                </td>
+                <td>
+                    <textarea rows="5" cols="30"></textarea>
+                </td>
+                <td>
+                    <input type="month">
+                </td>
+                <td>
+                    <input type="month">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!---Work Experience 2-->
+    <div id="work-exp-2">
+        <h2>Work Experience 2</h2>
+        <table width="100%">
+            <tr>
+                <td>Sno</td>
+                <td>Company Address</td>
+                <td>Work/Roles</td>
+                <td colspan="2">Duration(from-to)</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    <textarea rows="5" cols="30"></textarea>
+                </td>
+                <td>
+                    <textarea rows="5" cols="30"></textarea>
+                </td>
+                <td>
+                    <input type="month">
+                </td>
+                <td>
+                    <input type="month">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!---Work Experience 3-->
+    <div id="work-exp-3">
+        <h2>Work Experience 3</h2>
+        <table width="100%">
+            <tr>
+                <td>Sno</td>
+                <td>Company Address</td>
+                <td>Work/Roles</td>
+                <td colspan="2">Duration(from-to)</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    <textarea rows="5" cols="30"></textarea>
+                </td>
+                <td>
+                    <textarea rows="5" cols="30"></textarea>
+                </td>
+                <td>
+                    <input type="month">
+                </td>
+                <td>
+                    <input type="month">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+        <!-- Add more sections for work experience, other details, etc. -->
+
+        <label class="checkbox-label">
+            <input type="checkbox" required>
+            I confirm that all the above information is correct to the best of my knowledge.
+        </label>
+
+        <div class="declaration">
+            <strong>Note:</strong> Providing false information may lead to disqualification.
+        </div>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <input type="submit" value="Submit" class="button">
+            <input type="reset" value="Reset" class="button">
+        </div>
+    </form>
+    <script src="../scripts/apply.js"></script>
+</body>
+</html>

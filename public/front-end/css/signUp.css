@@ -1,0 +1,229 @@
+:root {
+    --primary: #00B074;
+    --secondary: #2B9BFF;
+    --light: #EFFDF5;
+    --dark: #2B3940;
+    --yellow: #ffa76e;
+    --pink: #5846f9;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden; /* Prevent body scrolling */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(7px);
+    z-index: -1;
+}
+
+.logo-container {
+    position: absolute;
+    top: 10px;
+    left: 2px;
+}
+
+.obi-logo {
+    max-width: 70px;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    border: 1px solid #ccc;
+    background: linear-gradient(45deg, var(--primary) 0%, var(--dark) 100%);
+    z-index: 1;
+    flex-direction: row;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.slider {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px 0 0 15px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    border-radius: 15px 0 0 15px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background: linear-gradient(45deg, var(--primary), var(--dark));
+}
+
+.signUp-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the top */
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+    height: 90%; /* Fixed height to enable scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signUp-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-group input[type="file"] {
+    padding: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select,
+input[type="file"] {
+    width: calc(100% - 22px);
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+p {
+    text-align: center;
+    margin-top: 15px;
+    color: var(--dark);
+}
+
+p a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+.alert {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    border-radius: 5px;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .signUp-container {
+        width: 90%;
+        margin: 20px auto;
+        height: auto; /* Adjust height for mobile */
+    }
+
+    .slider, .signUp-container {
+        width: 100%;
+        flex: none;
+    }
+
+    .slide img {
+        height: auto;
+        border-radius: 15px 15px 0 0;
+    }
+}
